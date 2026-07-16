@@ -236,6 +236,34 @@
             color: var(--electric-blue);
         }
 
+        /* About & Values */
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .value-card {
+            background: rgba(14, 165, 233, 0.05);
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid rgba(14, 165, 233, 0.1);
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .value-card:hover {
+            background: rgba(14, 165, 233, 0.1);
+            transform: translateY(-5px);
+        }
+
+        .value-card i {
+            font-size: 2.5rem;
+            color: var(--electric-blue);
+            margin-bottom: 20px;
+        }
+
         /* Differentials & Benefits */
         .flex-section {
             display: flex;
@@ -426,6 +454,7 @@
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
+            <a href="#quem-somos" class="nav-btn">Quem Somos</a>
             <a href="#contato" class="nav-btn">Contato</a>
             <a href="https://wa.me/5521988250679" class="nav-btn active" target="_blank">Agendar Consultoria</a>
         </div>
@@ -445,8 +474,34 @@
         </div>
     </header>
 
+    <!-- Quem Somos Section -->
+    <section id="quem-somos" class="container" style="padding-top: 120px;">
+        <div style="text-align: center; max-width: 900px; margin: 0 auto;">
+            <h2>Quem Somos</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 40px;">A **AG MAX Licitações** nasceu com o propósito de democratizar o acesso de empresas ao mercado de compras públicas. Somos uma consultoria especializada em transformar a complexidade dos processos licitatórios em resultados reais e lucrativos para nossos clientes. Com uma equipe técnica altamente qualificada, atuamos em todas as fases da licitação, garantindo segurança jurídica e competitividade.</p>
+        </div>
+
+        <div class="about-grid">
+            <div class="value-card">
+                <i class="fas fa-bullseye"></i>
+                <h3>Missão</h3>
+                <p>Proporcionar crescimento sustentável aos nossos clientes através de parcerias sólidas com o setor público, simplificando processos e maximizando resultados.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-eye"></i>
+                <h3>Visão</h3>
+                <p>Ser a consultoria de referência nacional em inteligência em licitações, reconhecida pela excelência estratégica e integridade nos processos.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-star"></i>
+                <h3>Valores</h3>
+                <p>Ética inegociável, transparência total, foco em resultados e compromisso com a atualização constante perante a legislação.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Problem Section -->
-    <section class="container">
+    <section class="container" style="padding-top: 120px;">
         <h2>O Problema</h2>
         <div class="problem-grid">
             <div>
